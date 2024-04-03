@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 3000; //Enter Port Number
+const port = 3000; //Port Number
 
 app.use(express.json());
 
@@ -40,7 +40,7 @@ app.use((err, req, res, next) => {
     res.status(500).json({ message: 'Internal Server Error' });
 });
 
-//logging
+//log
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });
